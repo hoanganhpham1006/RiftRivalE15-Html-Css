@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rift Rival CLC</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css" >
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js" ></script>
+	<script src="js/jquery-2.1.1.min.js" ></script>
+	<style type="text/css">
+		@font-face {
+		    font-family: dl;
+		    src: url(font/DINLight.ttf);
+		}
+		.parallax{
+		    background-image: url("img/img1.jpg");
+			top: 0px;
+
+    /* Set a specific height */
+		    min-height: 100%; 
+
+		    font-family: dl;
+		    /* Create the parallax scrolling effect */
+		    background-attachment: fixed;
+		    background-position: center;
+		    background-repeat: no-repeat;
+		    background-size: cover;
+		    text-align: center;
+		}
+		.title{
+			font-size: 300%;
+			color: white; 
+			font-weight: bold;
+		}
+		.nav-tabs {
+   			 border-bottom: 3px solid #f00;
+		}
+
+		ul {
+		    display: inline-block;
+		    list-style-type: none;
+		}
+		a{
+			color: white;
+		}
+		tabs>li.active>a:focus{
+			color: black;
+		}
+		tabs>li.active>a:hover{
+			color: black;
+		}
+	</style>
+</head>
+<body>
+			<!-- Navigation -->
+	<nav class="navbar navbar-default" role="navigation" style="position: fixed; top: 0px; width: 100%; border-radius: 0; background-color: black; border: none;">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header" style="font-family: dl;">
+				
+				<a class="navbar-brand" href="#top" onclick="$('html,body').animate({scrollTop:0}, 'slow'); return false;" style="margin-left: 20px;color: white;border-bottom: red 3px solid; ">Rift Rival 2017</a>
+
+				<a class="navbar-brand" href="#top" onclick="$('html,body').animate({scrollTop:650}, 'slow'); return false;" style="margin-left: 20px;color: white;border-bottom: red 3px solid; ">Teams</a>
+				<a class="navbar-brand" href="#top" onclick="$('html,body').animate({scrollTop:1600}, 'slow'); return false;" style="margin-left: 20px;color: white;border-bottom: red 3px solid; ">Schedule</a>
+				<a class="navbar-brand" href="#top" onclick="$('html,body').animate({scrollTop:2600}, 'slow'); return false;" style="margin-left: 20px;color: white;border-bottom: red 3px solid; ">Rules</a>
+				<a class="navbar-brand" href="#top" onclick="$('html,body').animate({scrollTop:3150}, 'slow'); return false;" style="margin-left: 20px;color: white;border-bottom: red 3px solid; ">Results and Standing</a>
+			</div>
+	
+
+		</div>
+	</nav>
+
+	<div class="parallax">
+		<img src="img/logo.png" style="margin-top: 100px; height: 400px;"><br><br>
+		<img src="img/title.png">
+		<div class = "title" style="margin-top: 50px;background-color: black; padding-top: 50px; padding-bottom: 20px;">
+			4 TEAMS FROM 2 REGIONS
+		</div>
+		<div style="background-color: black; padding: 20px;">
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+					<li role="presentation" class="active">
+						<a href="#cn11" aria-controls="cn11" role="tab" data-toggle="tab" style="font-size: 20px;">TEAM 1 - CN1</a>
+					</li>
+					<li role="presentation">
+						<a href="#cn12" aria-controls="cn12" role="tab" data-toggle="tab" style="font-size: 20px;">TEAM 2 - CN1</a>
+					</li>
+					<li role="presentation">
+						<a href="#cn21" aria-controls="cn21" role="tab" data-toggle="tab" style="font-size: 20px;">TEAM 1 - CN2</a>
+					</li>
+					<li role="presentation">
+						<a href="#cn22" aria-controls="cn22" role="tab" data-toggle="tab" style="font-size: 20px;">TEAM 2 - CN2</a>
+					</li>
+				</ul>
+			
+				<!-- Tab panes -->
+				<div class="tab-content" style="color: white;">
+					<div role="tabpanel" class="tab-pane fade in active" id="cn11">
+						<img src="img/cn11.png" style="width: 70%; margin-top: 10px;">
+					</div>
+					<div role="tabpanel" class="tab-pane fade in" id="cn12">
+						<img src="img/cn12.png" style="width: 70%; margin-top: 10px;">
+					</div>
+					<div role="tabpanel" class="tab-pane fade in" id="cn21">
+						<img src="img/cn21.png" style="width: 70%; margin-top: 10px;">
+					</div>
+					<div role="tabpanel" class="tab-pane fade in" id="cn22">
+						<img src="img/cn22.png" style="width: 70%; margin-top: 10px;">
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class = "title" style="margin: 30px">
+			SCHEDULE
+		</div>
+		<img src="img/schedule.png" style="width: 60%;">
+		<div style="background-color: rgba(255, 0, 0, 0.6);">
+			<div class="title" style="margin: 20px; padding-top: 30px;">
+				RULES
+			</div>
+			<img src="img/rules.png" style="width: 80%; margin-left: 5%;">
+		</div>
+		<div class="title" style="margin: 30px;">
+			RESULTS AND STANDING
+		</div>
+		<div style="background-color:rgba(0, 0, 0, 0.6); padding: 20px;">
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+					<li role="presentation" class="active">
+						<a href="#g1" aria-controls="g1" role="tab" data-toggle="tab" style="font-size: 20px;">E15CN1'S GROUP</a>
+					</li>
+					<li role="presentation">
+						<a href="#g2" aria-controls="g2" role="tab" data-toggle="tab" style="font-size: 20px;">GUEST'S GROUP</a>
+					</li>
+					<li role="presentation">
+						<a href="#final" aria-controls="final" role="tab" data-toggle="tab" style="font-size: 20px;">FINAL MATCH</a>
+					</li>
+				</ul>
+			
+				<!-- Tab panes -->
+				<div class="tab-content" style="color: white;">
+					<div role="tabpanel" class="tab-pane fade in active" id="g1">
+						<img src="img/group1.png" style="width: 80%; margin: 50px;">
+					</div>
+					<div role="tabpanel" class="tab-pane fade in" id="g2">
+						<img src="img/group2.png" style="width: 80%; margin: 50px;">
+					</div>
+					<div role="tabpanel" class="tab-pane fade in" id="final">
+						...
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<footer style="background-color: black; text-align: center; padding: 30px;color: white;
+	width: 100%;">
+		RIFT RIVAL CLC 2017<br>
+		Hadong, Hanoi, July 2017<br>
+		E15CN1 - Posts and Telecommunications Institue of Technology
+	</footer>
+</body>
+</html>
